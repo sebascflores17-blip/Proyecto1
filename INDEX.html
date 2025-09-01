@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI PRIMERA PAGINA WEB</title>
 </head>
-<body>
- <h1>BIENVENIDOS al curso</h1>
+<body style="background-color: aqua;">
+    <!-- Contenedor de menu nav-->
+p>  <!-- EL PARRAFO COLOCA ENTER AUTOMATICO-->
+         <nav id="inicio">
+                <a href="#presentacion"> presentacion </a> &emsp;
+                 <a href="#links"> Link de la institucion </a> &emsp;
+                 <a href="#imagenes"> Imagenes</a> &emsp;
+                  <a href="#listas academicas">LISTAS ACADEMICAS</a> &emsp;
+                  <a href="#tabla de clubes">TABLA DE CLUBES</a> &emsp;
+                   <a href="#todo sobre mi persona">TODO SOBRE MI PERSONA</a> &emsp;
+
+         </nav>
+ <h1 id="presentacion">BIENVENIDOS al curso</h1>
     <P>CURSO : LENGUAJE PARA EL DESARROLLO Y SOPORTE DE SISTEMAS</P>
-  </p>  <!-- EL PARRAFO COLOCA ENTER AUTOMATICO-->
 
 
 <P> NOMBRE : SEBASTIAN <br>
 
-    APELLLIDO: CACHIQUE  <br>   <br>
+    APELLLIDOS: CACHIQUE FLORES <br>   <br>
 
     DISTRITO: SAN JUAN DE LURIGANCHO
 
-<p> CARGO : ESTTUDIANTE </p>
+<p> CARGO : ESTUDIANTE </p>
 
     <hr>
    <h2> Evaluacion del curso</h2>  
@@ -29,6 +39,105 @@
    <h4 style="font-size: 50%;">JAVASCCRIPT</h4>
     <h3 style="font-size: 40px;">Evidencia 4</h3>
     <h4 style="font-size: 2em;">FIREBASE</h4>
+
+<hr style="height: 10px;border:double rgb(0, 0, 0);background-color: rgb(8, 148, 230);">
+
+<!--tipo de borde solid= compacta ; dotted=punteado ; double= doble -->
+
+  <h2 id="links">USO DE LINKS</h2>
+  <a href="http://www.certus.edu.pe"  target="_blank"> ENLACE CERTUS</a>    <br>
+   <a href=" https://www.certus.edu.pe/sede/san-juan-de-lurigancho/" target="_blank"> MI SEDE </a>  <br>
+   <a href="https://intranet.certus.edu.pe/Login/Login/Portal" target="_blank">portal certus</a>    <br>
+
+      <h2 id="imagenes">USO DE IMAGENES</h2>
+       <P>imagenes de computadoras</P>
+       <img src="ima.webp" alt=" IMGEN DE CARGA " width="200px">
+       <img src="images (1).jpg" alt=" IMAGEN NO CARGA" width="300px">
+       <img src="images.jpg" alt=" IMAGEN NO CARGA " width="300px">
+
+       <p> imagenes de equipos de futbol</p>
+       <img src="escudos/alianza-240-7149.jpg" alt=" IMAGEN NO CARGA" width="400px">
+        <img src="C:\Users\lab04b2-sjl2\Documents\GitHub\Proyecto1\escudos/cristal.png" alt=" IMAGEN NO CARGA">
+         <!-- La ultima imagen no es conveniente cuando se cambia de PC -->
+
+         <br>
+        <p>Imagenes d escudos d anime</p>
+         <img src="https://i.pinimg.com/originals/63/bc/54/63bc54f30c39df54967d5a2a29c0c559.jpg"
+          alt=" IMAGEN NO CARGA"width= 800px  style="border: solid black 20px;">
+        
+          <br>
+          <img src="" alt="">
+ 
+            <a href="#inicio" style="font-size: 25px;"> VOLVER AL INICIO</a>
+               <hr style="height: 10px;border:double rgb(0, 0, 0);background-color: rgb(8, 148, 230);">
+
+
+
+         <h2 id="listas academicas"> USO DE LISTAS</h2>
+             <P>CONOCIMIENTOS PREVIOS PARA HTML en orden metodologico</P>
+               <ol type="A">
+                     <li> OFIMATICA BASICA</li>
+                     <li> GESTION DE CARPETAS</li>
+                     <li> INSTALACION Y DESINSTALACION DE PROGRAMAS</li>
+
+               </ol>
+              <p> Cualidades y buenas practicas a seguir</p>
+                  <ul>
+                       <li> Capacidad de atencion </li>
+                       <li> Consultar dudas no resueltas </li>
+                       <li> Repasar temas y realizar tareas en casa</li>
+                  </ul>
+
+           <h2 id="tabla de clubes"> USO DE TABLAS</h2>
+        <p> INFORMACION DE CLUBES</p>
+
+          <table border="2px" style="background-color: crimson;  font-size: 25px;">
+               <tr>
+                   <th> NOMBRE DEL CLUB</th> 
+                    <th> PAIS </th>
+                      <th> PROVINCIA </th>
+                       <th> escudo </th>
+               </tr>
+               <tr>
+                      <td> ALIANZA LIMA </td>
+                    <td> PERU </td>
+                     <td> LIMA </td>
+                      <td> <img src="alianza-240-7149.jpg" alt="IMAGEN NO CARAGA"></td>
+               </tr>
+                <tr>
+                      <td> UNIVERSITARIO</td>
+                       <td> PERU </td>
+                       <td> LIMA </td>
+                       <td> <img src="Logo_oficial_de_Universitario (1).png" alt="IMAGEN NO CARGA"></td>
+
+
+
+
+                </tr>
+
+
+
+          </table>
+             <a href="#inicio" style="font-size: 25px;"> VOLVER AL INICIO</a>
+             <hr style="height: 10px;border:double rgb(0, 0, 0);background-color: rgb(8, 148, 230);">
+
+
+               <h2> USO DE VIDEO LOCAL </h2>
+            <video src="videoplayba.mp4" height="400px" controls autoplay muted> VIDEO NO SOPORTADO</video>
+                <h2> VIDEO DE YOUTUBE </h2>
+
+            <iframe 
+            src="<iframe width="560" height="315" src="https://www.youtube.com/embed/Nt6TuPY4HNg?si=gieZ6DEJXd5848ko" 
+            title="YouTube video player"
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" 
+             allowfullscreen>
+            </iframe>"
+    
+        
+        
+        </iframe>
 
 
 
