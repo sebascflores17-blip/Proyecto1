@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI PRIMERA PAGINA WEB</title>
+    <title>MI PRIMERA PAGINA WEB</title><link rel="stylesheet" type="text/css" href="Estilos1.CSS">
 </head>
 <body style="background-color: rgb(20, 188, 230);"></body>
     <!-- Contenedor de menu nav-->
@@ -164,9 +164,9 @@ p>  <!-- EL PARRAFO COLOCA ENTER AUTOMATICO-->
         
               <hr>
               <h2>USO DE FORMULARIO</h2>
-              <form action="todosobremipersona.html"  method="post">
+              <form action="INDEX.html"  method="post">
 
-              <p><label for=" nombre"> Nombre: <input type=" text" id="nombre" required></label> </p>
+              <p><label for=" nombre"> Nombre: <input type=" text" id="nombre" name="nombre"></label> </p>
               <p><label for="apellido"> Apellido: <input type="text" id="apellido"></label></p>
               <p><label for="edad"> Edad: <input type="number" id="edad" min="18" max="80"></label></p>
 
@@ -201,6 +201,65 @@ p>  <!-- EL PARRAFO COLOCA ENTER AUTOMATICO-->
                    <input type="checkbox" name=" cursos " value=" Nuevas tendencias" id="Nuevas_Tendencias">
                         <label for=" Nuevas_Tendencias "> Nuevas tendencias </label> <br>
                    
+                            <input style="scale: 1.5 ;" id="primero" type="radio" name="Ciclo" value="primero">
+                      <p><label> Ciclo Actual </label></p>
+                         <label for="primero"> Primero </label><br>
+                        <input style="scale: 1.5 ;" id="segundo" type="radio" name="Ciclo" value="segundo">
+                        <label for="segundo "> Segundo </label><br>
+                        <input style="scale: 1.5 ;" id="tercero" type="radio" name="Ciclo" value="tercero">
+                        <label for="tercero"> Tercero </label><br>
+                     <input style="scale: 1.5 ;" id="cuarto" type="radio" name="Ciclo" value="cuarto">
+                       <label for="cuarto"> Cuarto </label><br>
+                        <input style="scale: 1.5 ;" id="quinto" type="radio" name="Ciclo" value="quinto">
+                        <label for="quinto"> Quinto </label><br>
+                        <input style="scale: 1.5 ;" id="sexto" type="radio" name="Ciclo" value="sexto">
+                        <label for="sexto"> Sexto </label>
+            </p>
+             <p>       
+
+
+
+              <label for="fecha">SELECCION fecha
+                <input type="date" style="font-size: 25px;" name="fecha"  id="fecha" 
+                    min="2025-09-01" max="2025-12-31"  >  
+              </label>
+            
+            <br><br>
+            
+             <label for="clave"  > Contraseña: 
+                <input type="password" id="clave" name="clave" minlength="8" maxlength="12" 
+                        placeholder="Minimo 8 y maximo 12"  >
+            
+             </label>
+            <br><br>
+             <label for="correo"  > Correo electronico: 
+                <input type="email" id="correo" name="correo"   placeholder="solo @certus.edu.pe" 
+                 pattern="[a-zA-Z0-9]+@certus\.edu\.pe" >
+            
+             </label>
+             <br><br>
+            
+             <label for="Usuario"  > Usuario: 
+                <input type="name" id="Usuario" name="Usuario" minlength="15" maxlength="40" 
+                        placeholder="Minimo 15 y maximo 40" 
+                        pattern="[A-Za-z0-9]" >
+
+
+
+
+
+            <br><br>
+             <label for="resetear"  > LIMPIAR 
+                <input type="reset" id="resetear" name="resetear"     >
+            
+             </label>
+                          
+                    
+
+
+
+
+
 
 
 
@@ -208,10 +267,10 @@ p>  <!-- EL PARRAFO COLOCA ENTER AUTOMATICO-->
 
 
             </p>
-                <button> enviar </button>
+                <button type="submit" style="font-size: 30px;"> enviar </button>
 
 
-
+           
 
 
 
