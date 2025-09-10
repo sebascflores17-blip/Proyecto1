@@ -16,12 +16,20 @@ table{
 }
 
 
+div{
+    color: black;
+    background-color: black;
+}
 
+div p {/* estilo solo para cualquier cualquier parrafo dentro de algun div*/
+    font-size: 40px;
+        color: blueviolet;}
 
+/*colocar estilo ttamaño 30px solo para input que nestan dentro de algun label*/
+label{font-size: 25px;}
 
-
-
-
+input{font-size: 30px;
+      color: silver;}
 
 
 
