@@ -2,6 +2,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            
         }
         header, nav, main, aside, footer {
             padding: 20px;
@@ -34,8 +35,9 @@
             flex: 0;
             background-color: #99a7d6;
             padding: 1%;
-            height: 200px;
-            width: 100px;
+            height: 250px;
+            max-width: 150px;
+            flex-direction: column;
         }
         footer {
             background-color: #222;
@@ -56,18 +58,67 @@
          .margen_imagen {
             margin-right: 20px;
          }
+        .aside_imagenes { background-color: white;}
+            
+
+        .color_link {
+            color: green;
+        }
 
 
+        .color_link:hover {
+            color: rgb(37, 15, 235) ;
+            background-color: rgb(226, 230, 15);
+        }
+        .a:link{
+            background-color: gold;
+            color: rgb(241, 13, 13);
+        }
+
+         .primera_letra {
+            color: darkblue;
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+        .primera_letra::first-letter {
+            color: rgb(207, 18, 18);
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       .clase_Static{
+        font-size: 20px;
+        background-color: #b92b2b;
+        position: static;
+        margin-top: 20px;
+        margin-left: 80px;
+        margin-right: 200px;
+       }
+
+       .clase_Static2{
+        font-size: 20px;
+        background-color: #99a7d6;
+        position: static;
+        top: 20px;
+        left: 80px;
+        right: 200px;
+       }
+        
+
+        .clase_Relative{
+            font-size: 20px;
+            background-color: #b92b2b;
+            height: 250px;
+            width: 200px;
+        }
 
 
-
-
-
-
-
-
-
-
+        .clase_Relative:hover {
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
 
 
 
