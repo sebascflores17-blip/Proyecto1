@@ -118,12 +118,22 @@
             position: relative;
             top: 100px;
             left: 100px;
+            
         }
 
+        .clase_Relative_index {
+            font-size: 20px;
+            background-color: rgb(22, 223, 223);
+            height: 250px;
+            width: 200px;
+        }
+         
 
-
-
-
+        .clase_Relative_index:hover {
+            position:relative;
+            top: 100px;
+            left: 100px; 
+            z-index: +10;                }
 
 
 
