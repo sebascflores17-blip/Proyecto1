@@ -121,19 +121,158 @@
             
         }
 
-        .clase_Relative_index {
+        .clase_relative_index{
             font-size: 20px;
-            background-color: rgb(22, 223, 223);
+            background-color: #99a7d6;
             height: 250px;
             width: 200px;
         }
-         
-
-        .clase_Relative_index:hover {
-            position:relative;
+        .clase_relative_index:hover{
+            position: relative;
             top: 100px;
-            left: 100px; 
-            z-index: +10;                }
+            left: 100px;
+            z-index: +10;
+        }
+
+         .clase_Absolute {
+            font-size: 20px;
+            background-color: #b92b2b;
+            height: 138px;
+            width: 200;
+            position: absolute;
+            top: 10px;
+            left: 700px;
+            z-index: +10;
+         }
+
+
+         .clase_Relative2 {
+            font-size: 20px;
+            background-color: #b92b2b;
+            height: 250px;
+            width: 200px;
+            position: relative;
+
+         }
+         .clase_AbsoluteRelative {
+            font-size: 20px;
+            background-color: #b92b2b;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            bottom: 0px;
+            left: 900px;
+            z-index: +5;
+         }
+
+
+         .class_Fixed {
+            height: 1300px;
+            width: 1000px;
+            position: fixed;
+            left: 150px;
+            bottom: 0px;
+            z-index: +5;
+         }
+         .marcaagua {
+         
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 999;
+         }
+         
+         .clase_Sticky {
+            position: sticky;
+            font-size: 40px;
+            top: 0px;
+            left: 40px;
+            height: 300px;
+         }
+
+       .class_float_right2 {
+        float: left;
+        background-color: #d1dfa1;
+        margin: 5px;
+       }
+
+
+    .tipoinlineblock {
+        background-color: #4CAF50;
+        font-size: 30px;
+        margin: 10px;
+        color: azure;
+        display: inline-block;
+        width: 500px;
+    }
+
+
+     .enlinea {
+        background-color: aliceblue;
+        display: inline;
+        font-size: 30px;
+        margin: 2px;
+        color: #333;
+        width: 80px;
+        height: 40px;
+     }
+
+
+     .tiponone {
+        background-color: aqua;
+        font-size: 20px;
+        margin: 20px;
+        color: #99a7d6;
+        display: none;
+     }
+  
+
+     .tipohidden {
+        background-color: rgb(25, 0, 255);
+        font-size: 20px;
+        margin: 20px;
+        color: aquamarine;
+        visibility: hidden;
+     }
+
+    .tipoflex {
+        display: flex;
+        background-color: aqua;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .contenedor-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+        gap: 15px; /* Espacio entre celdas */
+      }
+      
+      .item img {
+           max-width: 100%; /* Para que no se desborde */
+      }
+      
+      .item {
+       display: flex;
+        background-color: lightcoral;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #333;
+        font-size: 30px;
+         justify-content: center;  /* Centrar horizontalmente */
+        align-items: center;      /* Centrar verticalmente */
+      }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
