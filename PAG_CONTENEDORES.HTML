@@ -24,6 +24,56 @@
             <a href="#">PRODUCTO</a>
             <a href="#">FORMULARIO DE REGISTRO</a>
             <a href="#">Contacto</a>
+             
+            <ul class="claseNav">
+                  <li> 
+                    <a  href="https://irun.pe/">I-RUN</a>
+                       <ul><!--INICIO SUBMENU-->
+                           <li>
+                            <a class="claseNav" href="https://irun.pe/catalogo/mujer/">MUJER</a>
+                           </li>
+                            <li>
+                              <a class="claseNav" href="https://irun.pe/catalogo/hombre/">HOMBRE</a>
+                            </li>
+                       </ul>
+
+
+                  </li>
+
+                  <li> 
+                    <a  href="https://www.bata.com/pe/">BATA</a>
+                       <ul><!--INICIO SUBMENU-->
+                           <li>
+                            <a class="claseNav" href="https://www.bata.com/pe/mujer/zapatos/">MUJER</a>
+                           </li>
+                            <li>
+                              <a class="claseNav" href="https://www.bata.com/pe/hombre/zapatos/">HOMBRE</a>
+                            </li>
+                       </ul>
+
+
+                  </li>
+                  <li> 
+                    <a  href="https://www.nike.com.pe/home/">NIKE</a>
+                       <ul><!--INICIO SUBMENU-->
+                           <li>
+                            <a class="claseNav" href="https://www.bata.com/pe/mujer/zapatos/">MUJER</a>
+                           </li>
+                            <li>
+                              <a class="claseNav" href="https://www.nike.com.pe/mujer">HOMBRE</a>
+                            </li>
+                       </ul>
+
+
+                  </li>
+                 
+            </ul>
+
+
+
+
+
+
         </nav>
 
         <main>
@@ -311,7 +361,7 @@
             <article>
                 <h1>VISUALIZACIONES DISPLAY </h1>
             </article>
-
+          
                <h2>Elemento desaparecido mediante display none</h2>
              <div class="tiponone">Elemento de estilo none</div>
 
@@ -355,6 +405,10 @@
               </div>
 
 
+             
+            </article>
+
+              
 
 
 
@@ -365,11 +419,40 @@
 
 
 
+          </section>
+
+         <section>
+               <article> <h2>JAVASCRIPT</h2>
+
+                <div style="font-size: 30px;">
+                  Contenedor resultado de JAVASCRIPT
+                      <div id="resultado" style="font-size: 30px;">
+                        <p>Operacion Suma</p>
+                      </div>
+
+
+                </div>
+                 <script>
+                  window.alert("Bienvenidos");
+                  var valor1=40 ; var valor2=60;
+                  var suma = valor1 + valor2;  var resta =valor1 - valor2 ;
+                  document.write("<br<  <br> FIN DE PAGINA");
+                  console.log("El valor de la suma",valor1 ,"con", valor2, " es ",suma);
+                  console.log("El valor de la suma",valor1 ,"con", valor2, " es ",resta);
+
+                  document.getElementById("resultado").innerHTML= "<br> EL VALOR DE LA SUMA DE"+ valor1 +
+                  "con"+ valor2 +"es"+suma +"<br>"+
+                  "<br>El valor de la resta de "+ valor1 +
+                  "con" + valor2 + "es" + resta ;
+                 </script>
 
 
 
 
-       </section>
+
+
+
+               </article>
 
 
 
@@ -377,29 +460,28 @@
 
 
 
-
-
-
-
-        <footer>
-            <p>Derechos reservados &copy; 2025 - SHOE STORE</p>
-            <p>LIMA-PERU</p>
-        </footer>
-    </div>
-
-    <a href="#ordinary-target">Esta es una prueba.</a><br />
-    <a href="">Ya puede estar.</a><br />
-    <a>salio</a>
+         </section>
+          <video autoplay muted loop id="Mivideo">
+        <source src="VideoCorto.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
 
 
 
 
 
-
-
-</body>
-</html>
-
+  
+  
+          <footer>
+              <p>Derechos reservados &copy; 2025 - SHOES STORE </p>
+              <p>Lima - Peru</p>
+          </footer>
+  
+  
+      </div>
+  
+  </body>
+  </html>
 
 
 
