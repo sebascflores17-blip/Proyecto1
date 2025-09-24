@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TIENDA VIRTUAL CALZADOS </title>
+
     <link rel="stylesheet" type="text/css" href="Estilos2.CSS">
+    <script type="text/javascript" src="SCRIPT1.js"></script>
+
     
 </head>
 <body>
@@ -232,7 +235,7 @@
                   <div>
                     <img class="class_Fixed ; marcaagua" 
                     style="border: 9px solid; color: rgb(163, 165, 165);"
-                     src="Black_Bull_Insignia.webp" alt="IMAGEN NO DISPONIBLE"
+                     src="970fa7f8170d7327b87d0be4f9df4002.webp" alt="IMAGEN NO DISPONIBLE"
                     width="300"      height="400">
                   </div>
 
@@ -242,7 +245,7 @@
                   <div  > <!--si se coloca style height restringira la altura del sticky-->
                      <img class="clase_Sticky"
                        style="border:9px double ; color:rgb(26, 27, 27)"
-                        src="Black_Bull_Insignia.webp"        alt="IMAGEN NO DISPONIBLE"
+                        src="970fa7f8170d7327b87d0be4f9df4002.webp"        alt="IMAGEN NO DISPONIBLE"
                         width="250"       height="200"      >
                     
                 
@@ -437,14 +440,47 @@
                   var valor1=40 ; var valor2=60;
                   var suma = valor1 + valor2;  var resta =valor1 - valor2 ;
                   document.write("<br<  <br> FIN DE PAGINA");
-                  console.log("El valor de la suma",valor1 ,"con", valor2, " es ",suma);
-                  console.log("El valor de la suma",valor1 ,"con", valor2, " es ",resta);
+                  console.log("El valor de la suma", valor1 ,"con", valor2 , " es ", suma );
+                  console.log("El valor de la suma", valor1 ,"con", valor2 , " es ", resta );
 
                   document.getElementById("resultado").innerHTML= "<br> EL VALOR DE LA SUMA DE"+ valor1 +
-                  "con"+ valor2 +"es"+suma +"<br>"+
+                  "con"+ valor2 +"es"+ suma +"<br>"+
                   "<br>El valor de la resta de "+ valor1 +
                   "con" + valor2 + "es" + resta ;
+
+                  document.write("  <ul align='right'  style='color:rgb(47, 59, 34)'> " + 
+                " <li>Capacidad de atencion</li> " +
+                    " <li>Consultar dudas no resueltas</li> " +
+                    " <li>Repasar temas y realizar tareas en casa</li>" +
+                " </ul> ") ;
                  </script>
+
+                   <h1 style="font-size: 30px;">EJEMPLO DE MANIPULACION DEL DOM</h1>
+                   <P id="ejmDOM1" style="font-size: 30px;">primer texto a aplicar DOM</P>
+
+                    <p class="classDOM1"> Texto a aplicar DOM1 mediante clase</p>
+                    <p class="classDOM1"> Texto a aplicar DOM1 mediante clase</p>
+                    <h2 class="classDOM1"> Texto a aplicar DOM1 mediante clase </h2>
+
+                    <button style="font-size: 25px;" onclick="FCambioColor()"> Cambiar por id</button>
+                    <button style="font-size: 25px;" onclick="FCambioClase1()"> Cambiar por clase</button>
+                    <button style="font-size: 25px;" onclick="FCambioTag1()"> Cambiar por TAG h2</button>
+                    <button style="font-size: 25px;" onclick="FCrear1()"> Crear lista viñetas</button>
+                    <button style="font-size: 25px;" onclick="FAgregarTextoPermanente()"> Agregar texto a vTexto1 </button>
+ 
+
+
+
+                    <h2 style="font-size: 20px;"> Creacion de elementos en linea </h2>
+                    <br>
+                    <button onclick="FCrearElemento()"> Crear elemento </button>
+                    <div id="complementario1"> Datos complementarios del estudiante: <br>
+                    </div>
+
+
+                     <img src="970fa7f8170d7327b87d0be4f9df4002.webp" alt="20px">
+
+
 
 
 
