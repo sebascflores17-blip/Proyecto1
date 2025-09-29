@@ -17,8 +17,8 @@ table{
 
 
 div{
-    color: black;
-    background-color: black;
+    color: rgb(206, 37, 7);
+    background-color: rgb(40, 21, 209);
 }
 
 div p {/* estilo solo para cualquier cualquier parrafo dentro de algun div*/

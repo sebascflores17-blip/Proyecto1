@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Tienda</title>
+    <link rel="stylesheet" href="fg.CSS">
+    <script type="text/javascript" src="fg.JS"></script>
+</head>
+<body class="watermark">
+
+    <header>
+        <h1>Mi Tienda Online</h1>
+        <img src="https://i.imgur.com/g1012s6.png" alt="Logo de la tienda" class="logo">
+    </header>
+
+    <main class="container">
+        <h2>Catálogo de Productos</h2>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Talla</th>
+                    <th>Precio (S/)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://i.imgur.com/OK893g1.png" alt="Polo" class="product-photo"></td>
+                    <td>Polo Estampado</td>
+                    <td>M</td>
+                    <td class="precio-producto">50.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.imgur.com/MExgGCs.png" alt="Jean" class="product-photo"></td>
+                    <td>Pantalón Jean</td>
+                    <td>32</td>
+                    <td class="precio-producto">120.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.imgur.com/w9N3eNo.png" alt="Zapatillas" class="product-photo"></td>
+                    <td>Zapatillas Urbanas</td>
+                    <td>42</td>
+                    <td class="precio-producto">250.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.imgur.com/gK2RC18.png" alt="Casaca" class="product-photo"></td>
+                    <td>Casaca Bomber</td>
+                    <td>L</td>
+                    <td class="precio-producto">180.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.imgur.com/9O3b5XG.png" alt="Gorra" class="product-photo"></td>
+                    <td>Gorra Deportiva</td>
+                    <td>Única</td>
+                    <td class="precio-producto">45.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Formulario de Pedido</h2>
+        <div class="form-pedido">
+            <h3>Datos del Cliente</h3>
+            <input type="text" id="nombreCliente" class="datos-cliente" placeholder="Nombre Completo">
+            <input type="text" id="direccionEnvio" class="datos-cliente" placeholder="Dirección de Envío">
+            <input type="text" id="telefonoContacto" class="datos-cliente" placeholder="Teléfono">
+            
+            <h3>Detalles del Pedido</h3>
+            <label for="cantidad">Cantidad a pedir (del primer producto: Polo):</label>
+            <input type="number" id="cantidad" min="1" value="1">
+
+            <textarea id="comentarios" rows="4" placeholder="Comentarios adicionales, descuentos o recargos aparecerán aquí..."></textarea>
+            
+            <div class="options-group">
+                <label>Servicios Adicionales:</label>
+                <input type="checkbox" name="servicios" id="chk1" class="opcion-servicio"> Envoltura de regalo
+                <input type="checkbox" name="servicios" id="chk2" class="opcion-servicio"> Envío express
+                <input type="checkbox" name="servicios" id="chk3" class="opcion-servicio"> Seguro de envío
+            </div>
+            
+            <div class="options-group">
+                <label>Método de Pago:</label>
+                <input type="radio" name="pago" id="radio1" class="metodo-pago"> Tarjeta de Crédito
+                <input type="radio" name="pago" id="radio2" class="metodo-pago"> PayPal
+                <input type="radio" name="pago" id="radio3" class="metodo-pago"> Transferencia
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Acciones y Cálculos</h2>
+        <div class="actions">
+            <button id="btnCalcularPrecio">Calcular Precio Total</button>
+            <button id="btnMostrarIds">Mostrar IDs de Inputs</button>
+            <button id="btnContarInputs">Crear Párrafo (N° de Inputs)</button>
+            <button id="btnCalcularDescuento">Calcular Descuento/Recargo</button>
+        </div>
+
+        <div class="results">
+            <h2 id="resultadoPrecio"></h2>
+            <h2 id="resultadoIds"></h2>
+            <div id="contenedorParrafo"></div>
+        </div>
+
+        <hr>
+
+        <div class="homework">
+            <h2>Actividad Domiciliaria</h2>
+            <label for="generadorInputs">Ingrese palabra:</label>
+            <input type="text" id="generadorInputs">
+            <div id="cajasGeneradas" class="generated-boxes">
+                </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

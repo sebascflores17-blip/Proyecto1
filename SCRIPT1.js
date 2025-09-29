@@ -58,13 +58,75 @@ console.log("Texto por consola");
             function FCrearElemento() {
                 var vElemento = document.getElementById("complementario1");
                 var nuevoH3= document.createElement("h3");
+                var texto=document.createTextNode("deporte favorito:");
+                nuevoH3.appendChild(texto);
+                vElemento.appendChild(nuevoH3);
+
+
+                var nuevoInputText= document.createElement("input");
+                nuevoInputText.type = "text";
+
+                vElemento.appendChild(nuevoInputText);
+              
+                var nuevoH3= document.createElement("h3");
                 var texto=document.createTextNode("DNI:");
                 nuevoH3.appendChild(texto);
                 vElemento.appendChild(nuevoH3);
-                //CREAR un input text para poder completar el deporte favorito
+
                 var nuevoInputText= document.createElement("input");
-                nuevoInputText.type = "text";
+                nuevoInputText.type = "number";
+
                 vElemento.appendChild(nuevoInputText);
-                //CREAR un parrafo de tamaño 20px que pida ingresar tu DNI
-                //CREAR su input number correspondiente//
-                }
+            }
+                 
+                
+
+            function Fqueryselector1() {
+                var vObjetoClase= document.querySelector(".classDOM1");
+                vObjetoClase.innerHTML="TExto cambiado por query selector a la clase primer indice [0]";
+                var vObjetoId= document.querySelector("#ejmDOM1");
+                vObjetoId.style.color="red";
+                var vObjetoTagh2= document.querySelector("h2");
+                vObjetoTagh2.style.textAlign="center";
+                  }
+
+
+                  function FusoFor1()
+                  {
+                  const vTextoClass = document.getElementsByClassName("classFOR1");
+                  var vTextoTotal="";
+                 
+                  for(let i =0 ; i< vTextoClass.length; i++)
+                  {
+                  vTextoClass[i].style.border="2px solid yellow";
+                  vTextoTotal=vTextoTotal + vTextoClass[i].innerText+ '-';
+                  }
+                  
+                  var nuevoH1=document.createElement("hl");
+                  var texto=document.createTextNode(vTextoTotal);
+                  nuevoH1.appendChild(texto);
+                  vTextoClass[3].appendChild(nuevoH1); 
+                 }
+                  
+                 function FUsoForEach1(){
+                    const vTextoClass = document.querySelectorAll(".classFOR1");
+                    var vTextoTotal="";
+                   
+                  vTextoClass.forEach
+                  (    iter =>
+                    {
+                    iter.style.border="3px solid blue";
+                    vTextoTotal=vTextoTotal + iter.innerText+ '-';
+                    }
+                   );
+                    var nuevoH1=document.createElement("h1");
+                    var texto=document.createTextNode(vTextoTotal);
+                    nuevoH1.appendChild(texto);
+                    vTextoClass[3].appendChild(nuevoH1);
+                 }
+                 function FEliminarConcat()
+                 {
+                    const vTextoClass = document.getElementsByClassName("classFOR1");
+
+                    vTextoClass[3].remove(); // eliminar la clase de posicion [3]
+                 }

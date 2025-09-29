@@ -10,7 +10,7 @@
 
 .menu-principal li {
     display: inline-block; /* Muestra los elementos en línea */
-    position: relative; /* Posición para el submenú */
+    position: relative; 
 }
 
 .menu-principal a {
