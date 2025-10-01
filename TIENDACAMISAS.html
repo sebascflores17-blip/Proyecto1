@@ -6,7 +6,7 @@
     <title> TIENDA VIRTUAL CALZADOS </title>
 
     <link rel="stylesheet" type="text/css" href="estilos4.CSS">
-    <script type="text/javascript" src="SCRIPT1.js"></script>
+    <script type="text/javascript" src=""></script>
 
     
 </head>
@@ -46,7 +46,7 @@
                      <td> ALGODON</td>
                       <td> 50 </td>
                </tr>
-                <tr>
+               <tr>
                       <td> <img src="Series-Camiseta-Spiderman-Logo.jpg" alt="IMAGEN NO CARAGA" width="200px"> POLO ESTAMPADO</td>
                        <td> M </td>
                        <td> ALGODON PIMA </td>
@@ -73,10 +73,74 @@
 
           </table>
 
+<hr>
+              <h2>USO DE FORMULARIO</h2>
+              <form action=""  method="post">
 
-          <h2>Formulario de Pedido</h2>
-          <div class="form-pedido">
-              <h3>Datos del Cliente</h3>
-              <input type="text" id="nombreCliente" class="datos-cliente" placeholder="Nombre Completo">
-              <input type="text" id="direccionEnvio" class="datos-cliente" placeholder="Dirección de Envío">
-              <input type="text" id="telefonoContacto" class="datos-cliente" placeholder="Teléfono">
+              <p><label for=" nombre"> Nombre: <input type=" text" id="nombre" name="nombre"></label> </p>
+              <p><label for="apellido"> Apellido: <input type="text" id="apellido"></label></p>
+              <p><label for="edad"> Edad: <input type="number" id="edad" min="18" max="80"></label></p>
+
+              <p><label for="observacion"> Observacion:
+                <textarea name="observacion" id="observacion"
+                style="height: 180px; width: 300px; font-size: 25ps;">
+              </textarea>
+
+               <h3>Detalles del Pedido</h3>
+            <label for="cantidad">Cantidad a pedir (del primer producto: Polo):</label>
+            <input type="number" id="cantidad" min="1" value="1">
+
+            <textarea id="comentarios" rows="4" placeholder="Comentarios adicionales, descuentos o recargos aparecerán aquí..."></textarea>
+
+                <div class="options-group">
+            
+                <label>Servicios Adicionales:</label>
+                <input type="checkbox" name="servicios" id="chk1" class="opcion-servicio"> Envoltura de regalo
+                <input type="checkbox" name="servicios" id="chk2" class="opcion-servicio"> Envío express
+                <input type="checkbox" name="servicios" id="chk3" class="opcion-servicio"> Seguro de envío
+            </div>
+              
+                <div class="options-group">
+            <label> Servicios Adicionales </label>
+               <br>
+                  <input type="checkbox" name=" servicios " value=" envoltura de regalo  " id=" envoltura de regalo">
+                      <label for=" envoltura de regalo "> envoltura de regalo </label> <br>
+                   <input type="checkbox" name=" servicios " value=" envio express" id="Express">
+                        <label for=" Express "> Envio Express </label> <br>
+                   <input type="checkbox" name=" servicios " value=" seguro de envio" id="seg-envio">
+                        <label for=" seg-envio "> Seguro de Envio </label> <br>
+                        </div>
+          
+                         <div class="options-group">
+                <label>Método de Pago:</label>
+                <br>
+                <input type="radio" name="pago" id="radio1" class="metodo-pago"> <label for="tarjeta de credito">Tarjeta de Crédito</label> <br>
+                <input type="radio" name="pago" id="radio2" class="metodo-pago"> <label for="Yape">Yape</label> <br>
+                <input type="radio" name="pago" id="radio3" class="metodo-pago">  <label for="Transferencia">Transferencia</label> <br>
+            </div>
+
+
+            <h2></h2>
+                  <div>
+                    <img class="class_Fixed ; marcaagua" 
+                    style="border: 9px solid; color: rgb(163, 165, 165);"
+                     src="123456789.jpg" alt="IMAGEN NO DISPONIBLE"
+                    width="300"      height="400">
+                  </div>
+
+                  <hr>
+
+        <h2>Acciones y Cálculos</h2>
+        <div class="actions">
+            <button id="btnCalcularPrecio">Calcular Precio Total</button>
+            <button id="btnMostrarIds">Mostrar IDs de Inputs</button>
+            <button id="btnContarInputs">Crear Párrafo (N° de Inputs)</button>
+            <button id="btnCalcularDescuento">Calcular Descuento/Recargo</button>
+        </div>
+
+        <div class="results">
+            <h2 id="resultadoPrecio"></h2>
+            <h2 id="resultadoIds"></h2>
+            <div id="contenedorParrafo"></div>
+        </div>
+                  

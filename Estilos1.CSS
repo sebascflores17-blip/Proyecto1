@@ -28,7 +28,7 @@ div p {/* estilo solo para cualquier cualquier parrafo dentro de algun div*/
 /*colocar estilo ttamaño 30px solo para input que nestan dentro de algun label*/
 label{font-size: 25px;}
 
-input{font-size: 30px;
+input{font-size: 50px;
       color: silver;}
 
 
