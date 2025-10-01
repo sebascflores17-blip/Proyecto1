@@ -88,7 +88,7 @@ header {
 
 /* Marca de agua */
 body.watermark {
-    background-image: url('https://i.imgur.com/g1012s6.png'); /* Usa el mismo logo */
+    background-image: url('123456789.jpg'); /* Usa el mismo logo */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -198,4 +198,24 @@ body.watermark {
     width: 60px;
     margin: 5px;
     padding: 5px;
+}
+
+
+
+.class_Fixed {
+    height: 1300px;
+    width: 1000px;
+    position: fixed;
+    left: 150px;
+    bottom: 0px;
+    z-index: +5;
+ }
+
+
+
+.marcaagua {
+ 
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 999;
 }

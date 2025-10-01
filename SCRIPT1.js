@@ -90,43 +90,90 @@ console.log("Texto por consola");
                 vObjetoTagh2.style.textAlign="center";
                   }
 
-
-                  function FusoFor1()
+                  function FUsoFor1()
                   {
-                  const vTextoClass = document.getElementsByClassName("classFOR1");
-                  var vTextoTotal="";
-                 
-                  for(let i =0 ; i< vTextoClass.length; i++)
+                    const vTextoClass = document.getElementsByClassName("classFOR1");
+                    var vTextoTotal="";
+                    // como length=4 --> ira desde 0 hasta 3
+                    for(let i=0 ; i< vTextoClass.length ; i++ )
+                    {
+                      vTextoClass[i].style.border ="2px solid red" ;
+                      vTextoTotal = vTextoTotal + vTextoClass[i].innerText+'-';
+                  
+                    } // fin de for
+                    var nuevoH1 =document.createElement("h1");
+                    var texto = document.createTextNode(vTextoTotal);
+                    nuevoH1.appendChild(texto);
+                    vTextoClass[3].appendChild(nuevoH1);
+                    
+                  }  // fin de function
+                  
+                  function FUsoForEach1()
                   {
-                  vTextoClass[i].style.border="2px solid yellow";
-                  vTextoTotal=vTextoTotal + vTextoClass[i].innerText+ '-';
-                  }
-                  
-                  var nuevoH1=document.createElement("hl");
-                  var texto=document.createTextNode(vTextoTotal);
-                  nuevoH1.appendChild(texto);
-                  vTextoClass[3].appendChild(nuevoH1); 
-                 }
-                  
-                 function FUsoForEach1(){
                     const vTextoClass = document.querySelectorAll(".classFOR1");
                     var vTextoTotal="";
-                   
-                  vTextoClass.forEach
-                  (    iter =>
-                    {
-                    iter.style.border="3px solid blue";
-                    vTextoTotal=vTextoTotal + iter.innerText+ '-';
-                    }
-                   );
+                    // como length=4 --> ira desde 0 hasta 3
+                    vTextoClass.forEach
+                    ( iter=>
+                      {
+                        iter.style.border ="2px solid blue" ;
+                        vTextoTotal = vTextoTotal + iter.innerText+'-';
+                  
+                      } // fin de for
+                  
+                    );
                     var nuevoH1=document.createElement("h1");
                     var texto=document.createTextNode(vTextoTotal);
                     nuevoH1.appendChild(texto);
                     vTextoClass[3].appendChild(nuevoH1);
                  }
-                 function FEliminarConcat()
-                 {
-                    const vTextoClass = document.getElementsByClassName("classFOR1");
 
-                    vTextoClass[3].remove(); // eliminar la clase de posicion [3]
-                 }
+
+                 
+                 function FEliminarConcat() {
+                  alert("HOLA");
+                  const vTestoClass = document.getElementsByClassName("classFOR1");
+                  let rpta =prompt("Estas seguro de eliminar el texto concatenacion? (S/N)", '');
+                  if (rpta== "S" || rpta== "s") //
+                   { let rpta2 =prompt("ingerse el numero de fila a eliminar", '');
+                      vTestoClass[rpta2].remove();
+                      alert("CONCATENACION ELEMINADA");
+                   }
+                   else
+                    { if(rpta=="N" || rpta=="n")
+                    { alert("NO SE ELIMINARA");
+                    }
+                    else 
+                    {alert("OPCION INCORRECTA-INgresa nuevamente"); 
+                    }
+                    }
+              }
+
+
+
+                  function FCapturarNombre() {
+                    const vTexto1 = document.getElementById("Nombre");
+                    const vTexto2 = document.querySelectorAll("input.datosPersonales");
+                    const vTexto3 = document.getElementById("clave");
+                    const vTexto4 = document.getElementById("usuario");
+                // usar input para clases relacicandas a cajas de texto, etc
+                     vTexto1.style.color="red";
+                   var valor1 =vTexto1.value; // value obtiene el contenido de la caja de texto nombre
+                   var valor2 =vTexto4.value; //tipo string
+                     vTexto3.value=valor1; // asigna el nombre a la clave
+
+
+                     vTexto2.forEach(input =>{
+                      valor2 = valor2 + `${input.name}: ${input.value} : ${input.id} \n`;
+                      input.style.border="2px solid orange";
+                     });
+
+                     vTexto2[1].style.backgroundColor="aqua";
+                     document.getElementById('observacion').value = valor2;
+                     console.log('El valor del nombre es:', valor1);
+                  }
+
+
+
+
+                   
