@@ -538,7 +538,7 @@
                    <label for="matematica">Matematica</label> <br>
                 <input type="checkbox" name="curso" value="lenguaje dss" id="ldss">
                     <label for="ldss">lenguaje dss</label> <br>
-                <input type="checkbox" name="cursos" value="introducon investigacion" id="intro_inv">
+                <input type="checkbox" name="curso" value="introducon investigacion" id="intro_inv">
                      <label for="intro_inv">introducon investigacion</label> <br>
                 <input type="checkbox" name="curso" value="nuevas tendencas" id="nuevas_tendencias">
                      <label for="nuevas_tendencias"> Nuevas tendendicas</label> <br>
@@ -593,6 +593,14 @@
                       Copiar datos a observaciones</button>
 
 
+                      <button style="font-size:25px ;" type="button" onclick="FValidarCiclo()">
+                      Enviar ciclo a observacion</button>
+
+
+                      <button style="font-size:25px ;" type="button" onclick="FValidarCursos()">
+                      Enviar ciclo a observacion</button>
+
+                    
                 <br>
                 
                   <button type="submit" style="font-size: 25px;" >Enviar</button> 
@@ -602,7 +610,8 @@
             </article>
 
 
-
+<label for="numColegios">Número Colegios que estudió:</label>
+<input type="number" id="numColegios" min="0">
 
 
 

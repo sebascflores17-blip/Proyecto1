@@ -174,6 +174,80 @@ console.log("Texto por consola");
                   }
 
 
+                   function FValidarCiclo()
+                   {
+                    const varciclo =document .getElementsByName("ciclo")
+
+                    
+
+                    for(let i = 0; i < varciclo.length; i++)  {
+                       if (varciclo[i].checked==true) {
+//alert("Seleccionaste: " + varciclo[i].value);
+document.getElementById('observacion').value = varciclo[i].value;
+return; // Detener el bucle una vez que se encuentre el seleccionado
+}
+                    }
+                   }
 
 
-                   
+
+
+                   function FValidarCursos(){
+const varcurso = document.getElementsByName("curso");
+let varobservacion=document.getElementById("observacion");
+let textoObservacion="";
+
+for (let i = 0; i < varcurso.length; i++)  {
+if (varcurso[i].checked==true)
+  {
+      textoObservacion= varcurso[i].value + ";" + textoObservacion;
+  }
+  }
+varobservacion.value = textoObservacion;
+ }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const radios=document.querySelectorAll(`input[name="ciclo"]`) ;
+  radios.forEach
+  (function (radio)
+   {
+    radio.addEventListener('change',function(event)
+  {
+    const varciclo= event.target.value;
+    alert("Sede seleccionada"+ event.target.value);
+    const varsede= event.target;
+    document.getElementById('observacion').value = varsede;
+  }
+);
+   }) ;
+
+
+
+
+   const checkboxes=document.querySelectorAll('input[name="curso"]');
+checkboxes.forEach
+(function(checkbox)
+{
+checkbox.addEventListener('change', function (event)
+{const seleccionados = []; //array
+checkboxes.forEach(c => {
+if (c.checked==true) {
+seleccionados.push(c.value);
+//tb se puede usar concatenacion
+}
+});
+alert(event.target.value); //this.value es el elemento que recibe el evento
+//event.target.value es el elemento que origina el evento
+document.getElementById('observacion').value = seleccionados.join(",");
+//une todos los elementos de un array en una sola cadena de texto y devuelve esa cadena
+}
+);
+} );
+
+
+});
+
+
+
