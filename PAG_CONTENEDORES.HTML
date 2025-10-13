@@ -514,6 +514,16 @@
                     </textarea>
                 
                 </label></p>
+
+                 <hr>
+                <div style="margin: 20px 0;">
+                    <p>
+                        <label for="numColegios"><b>Número de colegios que estudió:</b></label>
+                        <input type="number" id="numColegios" name="numColegios" min="0" placeholder="Ej: 2" style="padding: 5px; width: 70px;">
+                    </p>
+                    <div id="contenedorColegios" style="margin-top: 15px;"></div>
+                </div>
+                <hr>
                 
                 
                 <p>
@@ -525,6 +535,8 @@
                         <option value="de 1.50 a 1.59">de 1.50 a 1.59</option>
                         <option value="de 1.60 a 1.69">de 1.60 a 1.69</option>
                         <option value="mayor o igual a 1.70">mayor o igual a 1.70</option>
+
+                        
                 
                       </select>
                 </label>
@@ -579,10 +591,57 @@
                     <input type="email" id="correo" name="correo" placeholder="@certus.edu.pe" pattern="+.[a-zA-Z0-0]+@certus\.edu\.pe">   </label>
                  <br><br>
                 
-                <label for="usuario">usuario
+               <label for="usuario">usuario
                     <input type="text" id="usuario" name="usuario" class="datosPersonales" minlength="5" maxlength="40" pattern="[a-zA-Z0-0]+"  >
                 </label>
                 <br><br>
+
+                 <div class="form-container">
+        
+    <script>
+        
+        const inputNumeroColegios = document.getElementById('numColegios');
+        const contenedorDinamico = document.getElementById('contenedorColegios');
+
+        
+        inputNumeroColegios.addEventListener('input', function() {
+            
+            
+            contenedorDinamico.innerHTML = '';
+
+            
+            const cantidad = parseInt(this.value, 10) || 0;
+
+          
+            for (let i = 1; i <= cantidad; i++) {
+                
+                
+                const grupoDiv = document.createElement('div');
+                grupoDiv.className = 'grupo-colegio';
+
+          
+                const nuevoLabel = document.createElement('label');
+                nuevoLabel.textContent = `Nombre del Colegio ${i}:`;
+                nuevoLabel.setAttribute('for', `colegio_${i}`);
+
+                
+                const nuevoInput = document.createElement('input');
+                nuevoInput.type = 'text';
+                nuevoInput.id = `colegio_${i}`;
+                nuevoInput.name = `colegio_${i}`; 
+                nuevoInput.placeholder = `Ingrese el nombre del colegio`;
+                
+              
+                grupoDiv.appendChild(nuevoLabel);
+                grupoDiv.appendChild(nuevoInput);
+
+              
+                contenedorDinamico.appendChild(grupoDiv);
+            }
+        });
+    </script>
+
+
                  
                 <label for="resetear" >limpiar: 
                     <input type="reset" id="resetear" name="resetear">
@@ -610,8 +669,7 @@
             </article>
 
 
-<label for="numColegios">Número Colegios que estudió:</label>
-<input type="number" id="numColegios" min="0">
+
 
 
 
@@ -639,15 +697,3 @@
   
   </body>
   </html>
-
-
-
-
-
-
-
-
-
-
-
-
